@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Playwrite+PE:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #51D6FF ;
+}
+
+.loading{
+    font-size: 2rem;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+}
+.loading svg{
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+    
+}
+
+
+.card{
+    /* position: relative; */
+    margin: 40px;
+    width: 700px;
+    min-height: 300px;
+    background-color: #bbd5ed;
+    padding: 20px 15px;
+    color: rgb(79, 89, 99);
+    border-radius: 20px;
+    filter: drop-shadow(10px 5px 10px);
+
+}
+
+.ico{
+    font-size: 2rem;
+    
+}
+::-webkit-scrollbar {
+    width: 12px;  /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar (for horizontal bars) */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Background color of the track */
+    border-radius: 10px;  /* Rounded corners of the track */
+}
+::-webkit-scrollbar-thumb {
+    background: #bbd5ed;  /* Background color of the thumb */
+    border-radius: 10px; /* Rounded corners of the thumb */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* Background color of the thumb when hovered */
+}
+::-webkit-scrollbar-corner {
+    background: #000;  /* Background color of the corner */
+}
+.quote{
+   font-size: 1.5rem;
+   height: 150px;
+   font-family: "Playwrite CU", cursive;
+   text-transform: capitalize;
+   overflow-y: scroll;
+   transition: overflow-y 0.3s ease-in;
+}
+
+.writer{
+    font-family: "Playwrite PE", cursive;
+    text-align: end;
+    text-transform: capitalize;
+}
+
+#newQuotebtn{
+    position: absolute;
+    font-size: 2rem;
+    width: 100%;
+    /* min-width: 300px;  */
+    border: 2px solid  #bbd5ed;
+    /* border-radius: 20px; */
+    padding: 5px;
+    color: rgb(79, 89, 99) ;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
